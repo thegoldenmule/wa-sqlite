@@ -50,9 +50,6 @@ jobs:
           ${{ runner.os }}-yarn-
     - run: yarn install
 
-    - name: Test with checked-in WASM files
-      run: yarn test
-
     # Install EMSDK
     - name: Setup Emscripten
       id: cache-system-libraries
